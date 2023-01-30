@@ -17,7 +17,7 @@ RUN sed -i 's/deb.debian.org/mirrors.aliyun.com/g' /etc/apt/sources.list \
 
 COPY requirements.txt /opt/CTFd/
 
-RUN pip install -r requirements.txt --no-cache-dir -i http://mirrors.aliyun.com/pypi/simple --trusted-host mirrors.aliyun.com
+RUN pip install -r requirements.txt --no-cache-dir -i https://pypi.mirrors.ustc.edu.cn/simple/ --trusted-host pypi.mirrors.ustc.edu.cn
 
 COPY . /opt/CTFd
 
