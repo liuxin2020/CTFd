@@ -16,7 +16,7 @@ docker node update --label-add='name=linux-1' $(docker node ls -q)
 sudo mkdir -p /etc/docker
 sudo tee /etc/docker/daemon.json <<-'EOF'
 {
-  "registry-mirrors": ["https://qzh87pvp.mirror.aliyuncs.com"]
+  "registry-mirrors": ["https://docker.mirrors.sjtug.sjtu.edu.cn"]
 }
 EOF
 sudo systemctl daemon-reload
